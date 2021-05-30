@@ -1,6 +1,3 @@
-# Spring-boot-with-Jpa-blog
-Spring Boot를 이용한 블로그
-=======
 # Spring Boot를 이용한 블로그
 
 1. jdk 1.8 설치
