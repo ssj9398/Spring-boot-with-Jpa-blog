@@ -32,12 +32,11 @@ spring:
 ```
 2. Post
 - body를 통해서 보낸다. form태그, json (application/json)이 대표적 
-- 
 3. Put
 4. Delete
 
-MIME 타입이란
-https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+* MIME 타입이란
+- (https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
 
 
