@@ -38,7 +38,14 @@ spring:
 * MIME 타입이란
 - (https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
+### Lombok 세팅 및 테스트
+1. gitbash를 통해 lombok 실행(cmd로 해도 무관)
 
+@Getter
+@Setter
+@data
+
+@Builder를 사용하면 순서를 안지켜도됨
 
 
 
