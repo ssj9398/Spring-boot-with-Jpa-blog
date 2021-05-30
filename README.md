@@ -37,7 +37,6 @@ spring:
 
 * MIME 타입이란
 - (https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
-- 
 ------------------------------------------------------------------------
 
 ### Lombok 세팅 및 테스트
@@ -46,5 +45,10 @@ spring:
 - @Getter, @Setter, @data, @AllArgsConstructor(모든페이지를 다쓰는 생성자), @NoArgsConstructor(빈생성자)
 - @Builder를 사용하면 순서를 안지켜도됨
 
+### yaml
+1. yaml설정은 스프링 프로젝트 설정하는것
+- 포트, 데이터베이스 연결, 인코딩 등 설정
+- 기존 xml에서 yaml로 진화??
+- (https://www.inflearn.com/questions/16184)
 
 
