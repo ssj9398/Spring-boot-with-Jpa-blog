@@ -35,15 +35,19 @@ spring:
 3. Put
 4. Delete
 
-* MIME 타입이란
+------------------------------------------------------------------------
+
+### MIME 타입이란
 - (https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+- 
 ------------------------------------------------------------------------
 
 ### Lombok 세팅 및 테스트
 1. gitbash를 통해 lombok 실행(cmd로 해도 무관)
-
 - @Getter, @Setter, @data, @AllArgsConstructor(모든페이지를 다쓰는 생성자), @NoArgsConstructor(빈생성자)
 - @Builder를 사용하면 순서를 안지켜도됨
+
+------------------------------------------------------------------------
 
 ### yaml
 1. yaml설정은 스프링 프로젝트 설정하는것
@@ -51,4 +55,4 @@ spring:
 - 기존 xml에서 yaml로 진화??
 - (https://www.inflearn.com/questions/16184)
 
-
+------------------------------------------------------------------------
