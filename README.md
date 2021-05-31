@@ -39,7 +39,7 @@ spring:
 
 ### MIME 타입이란
 - (https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
-- 
+ 
 ------------------------------------------------------------------------
 
 ### Lombok 세팅 및 테스트
