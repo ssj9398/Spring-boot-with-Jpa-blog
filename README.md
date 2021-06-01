@@ -49,10 +49,19 @@ spring:
 
 ------------------------------------------------------------------------
 
-### yaml
+### yaml 및 jsp 설정
 1. yaml설정은 스프링 프로젝트 설정하는것
 - 포트, 데이터베이스 연결, 인코딩 등 설정
 - 기존 xml에서 yaml로 진화??
 - (https://www.inflearn.com/questions/16184)
 
+* 기존엔 root-context.xml, servlet-context로 설정을 해줬으나 SpringBoot에서는 application.yml로만 하면됨
+- root-context.xml  데이터베이스 설정 (한번만 new됨 singleton으로 관리)
+
+- servlet-context 지속적으로 new됨
+
+* RestController는 String을 리턴 했을때  문자 그 자체를 리턴
+* Controller는 해당 경로 이하의 파일을 리턴
+
 ------------------------------------------------------------------------
+
