@@ -65,3 +65,26 @@ spring:
 
 ------------------------------------------------------------------------
 
+### JPA
+1. ddl-auto
+```
+create - 서버 시작시마다 DB초기화
+
+update - 수정사항만 DB에 반영
+
+none - DB에 아무런 반영을 하지 않음
+```
+2. physical-strategy
+```
+org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+엔티티를 만들 때 변수명 그대로 DB에 필드를 만들어 준다.
+
+org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+엔티티를 만들 때 변수명에 언더스코어를 붙여준다. 예) createDate -> create_date
+```
+3. show-sql: true
+- 로그에 쿼리를 보여준다.
+5. use-new-id-generator-mappings: false
+- mysql로 말하면 auto_increment 오라클로 말하면 시퀀스를 어떤식으로 사용할지 방식을 결정하는 것인데 false를 하면 jpa가 사용하는 기본 넘버링 전략을 따라가지 않는다
