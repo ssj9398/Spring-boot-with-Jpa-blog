@@ -86,5 +86,14 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 ```
 3. show-sql: true
 - 로그에 쿼리를 보여준다.
-5. use-new-id-generator-mappings: false
+4. use-new-id-generator-mappings: false
 - mysql로 말하면 auto_increment 오라클로 말하면 시퀀스를 어떤식으로 사용할지 방식을 결정하는 것인데 false를 하면 jpa가 사용하는 기본 넘버링 전략을 따라가지 않는다
+
+5. 연관관계
+```
+@ManyToOne
+@OneToMany
+@OneToOne
+@ManyToMany
+```
+- https://ict-nroo.tistory.com/127
