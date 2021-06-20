@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.function.Supplier;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,9 +25,26 @@ public class DummyControllerTest {
 	@Autowired
 	private UserRepository userRepository;
 	
-	@GetMapping("/dummy/user")
+	@GetMapping("/dummy/users")
 	public List<User> list(){
 		return userRepository.findAll();
+	}
+	
+	// 한페이지당 2건에 데이터를 리턴받아보기
+	// 페이지 별로 보려면 get방식으로 주소에 적으면 됨
+	@GetMapping("/dummy/user")
+	public List<User> pageList(@PageableDefault(size=2, sort="id", direction = Sort.Direction.DESC) Pageable pageable){
+		Page<User> pagingUser =  userRepository.findAll(pageable);
+		
+		//이렇게 분기를 태울수도 있다.
+		/*
+		 * if(pagingUser.isLast()) {
+		 * 
+		 * }
+		 */
+		
+		List<User> users = pagingUser.getContent();
+		return users;
 	}
 	
 	//{id} 주소로 파라메터를 전달 받기
