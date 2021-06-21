@@ -97,3 +97,11 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 @ManyToMany
 ```
 - https://ict-nroo.tistory.com/127
+
+6. 테이블 생성
+- @GeneratedValue
+- @Column
+- @Entity
+- @Enumerated
+- IllegalArgumentException
+7. 페이지 구현
