@@ -7,6 +7,8 @@
 4. github연동
 5. dependencies(DevTools, Lombok, Data JPA, MySQL Driver, Security, Web) 
 6. mysql 연결 및 설정
+* git clone
+   - 프로젝트 임포트 하고 lombok설치하고 utf-8설정 해주고 프로젝트 클린하면 됨
 ------------------------------------------------------------------------
 ```
 spring:
@@ -105,3 +107,7 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 - @Enumerated
 - IllegalArgumentException
 7. 페이지 구현
+- 회원가입
+  - 회원가입 시 ajax를 사용하는 2가지 이유
+    1. 요청에 대한 응답을 html이 아닌 Data(Json)를 받기 위해서
+    2. 비동기 통신을 하기 위해서
