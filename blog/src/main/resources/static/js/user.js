@@ -12,6 +12,7 @@ let index = {
 			email:$("#email").val(),
 			password:$("#password").val()
 		}
+		$.ajax().don().fail();  //ajax로 3개데이터를 json으로 insert요청
 	}
 }
 

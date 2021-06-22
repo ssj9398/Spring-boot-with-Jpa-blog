@@ -19,7 +19,7 @@ public class HttpControllerTest {
 	
 	@GetMapping("/http/lombok")
 	public String lombokTest() {
-		//Member m = new Member(1, "aaa", "1234", "a@a.com");
+		//Member m = new Member(1, "aaa", "1234", "a@a.com"); 
 		Member m = Member.builder().username("one").password("1234").email("a@naver.com").build();
 		System.out.println(TAG + "getter : " +m.getId());
 		m.setId(5000);
