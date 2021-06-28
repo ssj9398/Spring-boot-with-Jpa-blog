@@ -111,3 +111,7 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
   - 회원가입 시 ajax를 사용하는 2가지 이유
     1. 요청에 대한 응답을 html이 아닌 Data(Json)를 받기 위해서
     2. 비동기 통신을 하기 위해서
+
+8. 스프링 시큐리티
+  - https://www.baeldung.com/spring-security-taglibs (스프링 시큐리티 태그라이브러리)
+  - https://docs.spring.io/spring-security/site/docs/3.0.x/reference/el-access.html (태그라이브러리 - 매뉴얼)
