@@ -118,3 +118,14 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
   - 시큐리티가 로그인 요청을 하게 되면 username과 password를 가로채 로그인을 진행시킴
   - 로그인이 완료가 되면 시큐리티 세션에 유저 정보(IOC)를 등록
   - 해쉬 암호로 되어야 로그인이 가능하다.
+  - XSS, CSRF
+  1. XSS
+  - 자바스크립트 공격
+  - EX) 게시글이라고 가정한다면 제목에 <SCRIPT> 구문을 넣는 경우
+  - NAVER가 제공하는 LUCY도 있음
+  - http://naver.github.io/lucy-xss-filter/kr/
+
+  2.CSRF
+  - EX) naver.com/admin/board?id=alsya&point=50000
+  - get방식의 주소를 사용자가 악용할 수 있음
+
