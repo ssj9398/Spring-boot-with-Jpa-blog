@@ -115,3 +115,6 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 8. 스프링 시큐리티
   - https://www.baeldung.com/spring-security-taglibs (스프링 시큐리티 태그라이브러리)
   - https://docs.spring.io/spring-security/site/docs/3.0.x/reference/el-access.html (태그라이브러리 - 매뉴얼)
+  - 시큐리티가 로그인 요청을 하게 되면 username과 password를 가로채 로그인을 진행시킴
+  - 로그인이 완료가 되면 시큐리티 세션에 유저 정보(IOC)를 등록
+  - 해쉬 암호로 되어야 로그인이 가능하다.
