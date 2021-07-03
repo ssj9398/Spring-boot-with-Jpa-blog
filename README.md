@@ -119,7 +119,7 @@ org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
   - 로그인이 완료가 되면 시큐리티 세션에 유저 정보(IOC)를 등록
   - 해쉬 암호로 되어야 로그인이 가능하다.
   - XSS, CSRF
-    1. XSS
+    1.XSS
     - 자바스크립트 공격
     - EX) 게시글이라고 가정한다면 제목에 <SCRIPT> 구문을 넣는 경우
     - NAVER가 제공하는 LUCY도 있음
